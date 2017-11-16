@@ -1,12 +1,12 @@
 # PlanIT
 
-# Project Overview:
+# Project Overview
 
-# Getting Started:
+# Getting Started
 
 # Pre-requisites
 
-# Installation Instructions:
+# Installation Instructions
 
 # Deployment
 
