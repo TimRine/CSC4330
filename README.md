@@ -11,4 +11,6 @@ Instructor: Nash
 
 # Directory Structure:
 
+# Compilation Instructions:
+
 # Known Bugs:
