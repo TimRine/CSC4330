@@ -1,9 +1,24 @@
-    @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic");
+ @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic");
     @import url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
     body {
 		padding: 60px 0px;
 		background-color: rgb(220, 220, 220);
 	}
+	
+	.flag{
+	    width: 50px;
+	}
+	
+	h2{
+	    font-size: 200%;
+	    margin-top: 0px;
+	    font-weight: bold;
+	}
+    
+    .event-list .info .row{
+        padding-left: 10px;
+        font-size: 80%;
+    }
     
     .event-list {
 		list-style: none;
