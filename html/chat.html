@@ -1,229 +1,411 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-            <link href="css/chat.css" rel="stylesheet">
-    </head>
-    <body>
-  <div class="container clearfix">
-    <div class="people-list" id="people-list">
-      <div class="search">
-        <input type="text" placeholder="search" />
-        <i class="fa fa-search"></i>
-      </div>
-      <ul class="list">
-        <li class="clearfix">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01.jpg" alt="avatar" />
-          <div class="about">
-            <div class="name">Vincent Porter</div>
-            <div class="status">
-              <i class="fa fa-circle online"></i> online
-            </div>
-          </div>
-        </li>
-        
-        <li class="clearfix">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_02.jpg" alt="avatar" />
-          <div class="about">
-            <div class="name">Aiden Chavez</div>
-            <div class="status">
-              <i class="fa fa-circle offline"></i> left 7 mins ago
-            </div>
-          </div>
-        </li>
-        
-        <li class="clearfix">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_03.jpg" alt="avatar" />
-          <div class="about">
-            <div class="name">Mike Thomas</div>
-            <div class="status">
-              <i class="fa fa-circle online"></i> online
-            </div>
-          </div>
-        </li>
-        
-        <li class="clearfix">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_04.jpg" alt="avatar" />
-          <div class="about">
-            <div class="name">Erica Hughes</div>
-            <div class="status">
-              <i class="fa fa-circle online"></i> online
-            </div>
-          </div>
-        </li>
-        
-        <li class="clearfix">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_05.jpg" alt="avatar" />
-          <div class="about">
-            <div class="name">Ginger Johnston</div>
-            <div class="status">
-              <i class="fa fa-circle online"></i> online
-            </div>
-          </div>
-        </li>
-        
-        <li class="clearfix">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_06.jpg" alt="avatar" />
-          <div class="about">
-            <div class="name">Tracy Carpenter</div>
-            <div class="status">
-              <i class="fa fa-circle offline"></i> left 30 mins ago
-            </div>
-          </div>
-        </li>
-        
-        <li class="clearfix">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_07.jpg" alt="avatar" />
-          <div class="about">
-            <div class="name">Christian Kelly</div>
-            <div class="status">
-              <i class="fa fa-circle offline"></i> left 10 hours ago
-            </div>
-          </div>
-        </li>
-        
-        <li class="clearfix">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_08.jpg" alt="avatar" />
-          <div class="about">
-            <div class="name">Monica Ward</div>
-            <div class="status">
-              <i class="fa fa-circle online"></i> online
-            </div>
-          </div>
-        </li>
-        
-        <li class="clearfix">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_09.jpg" alt="avatar" />
-          <div class="about">
-            <div class="name">Dean Henry</div>
-            <div class="status">
-              <i class="fa fa-circle offline"></i> offline since Oct 28
-            </div>
-          </div>
-        </li>
-        
-        <li class="clearfix">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_10.jpg" alt="avatar" />
-          <div class="about">
-            <div class="name">Peyton Mckinney</div>
-            <div class="status">
-              <i class="fa fa-circle online"></i> online
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    
-    <div class="chat">
-      <div class="chat-header clearfix">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01_green.jpg" alt="avatar" />
-        
-        <div class="chat-about">
-          <div class="chat-with">Chat with Vincent Porter</div>
-          <div class="chat-num-messages">already 1 902 messages</div>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Event Chat | Triangle</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet"> 
+    <link href="css/animate.min.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+        <link href="css/chat.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
         </div>
-        <i class="fa fa-star"></i>
-      </div> <!-- end chat-header -->
-      
-      <div class="chat-history">
-        <ul>
-          <li class="clearfix">
-            <div class="message-data align-right">
-              <span class="message-data-time" >10:10 AM, Today</span> &nbsp; &nbsp;
-              <span class="message-data-name" >Olia</span> <i class="fa fa-circle me"></i>
-              
-            </div>
-            <div class="message other-message float-right">
-              Hi Vincent, how are you? How is the project coming along?
-            </div>
-          </li>
-          
-          <li>
-            <div class="message-data">
-              <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
-              <span class="message-data-time">10:12 AM, Today</span>
-            </div>
-            <div class="message my-message">
-              Are we meeting today? Project has been already finished and I have results to show you.
-            </div>
-          </li>
-          
-          <li class="clearfix">
-            <div class="message-data align-right">
-              <span class="message-data-time" >10:14 AM, Today</span> &nbsp; &nbsp;
-              <span class="message-data-name" >Olia</span> <i class="fa fa-circle me"></i>
-              
-            </div>
-            <div class="message other-message float-right">
-              Well I am not sure. The rest of the team is not here yet. Maybe in an hour or so? Have you faced any problems at the last phase of the project?
-            </div>
-          </li>
-          
-          <li>
-            <div class="message-data">
-              <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
-              <span class="message-data-time">10:20 AM, Today</span>
-            </div>
-            <div class="message my-message">
-              Actually everything was fine. I'm very excited to show this to our team.
-            </div>
-          </li>
-          
-          <li>
-            <div class="message-data">
-              <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
-              <span class="message-data-time">10:31 AM, Today</span>
-            </div>
-            <i class="fa fa-circle online"></i>
-            <i class="fa fa-circle online" style="color: #AED2A6"></i>
-            <i class="fa fa-circle online" style="color:#DAE9DA"></i>
-          </li>
-          
-        </ul>
-        
-      </div> <!-- end chat-history -->
-      
-      <div class="chat-message clearfix">
-        <textarea name="message-to-send" id="message-to-send" placeholder ="Type your message" rows="3"></textarea>
-                
-        <i class="fa fa-file-o"></i> &nbsp;&nbsp;&nbsp;
-        <i class="fa fa-file-image-o"></i>
-        
-        <button>Send</button>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 
-      </div> <!-- end chat-message -->
-      
-    </div> <!-- end chat -->
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png" alt="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="dropdown"><a href="#">Events <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="myevents.html">My Events</a></li>
+                                <li><a href="createevent.html">Create Event</a></li>
+                                <li><a href="service.html">Manage Events</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="404.html">404 error</a></li>
+                                <li><a href="coming-soon.html">Coming Soon</a></li>
+                            </ul>
+                        </li>                    
+                        <li class="dropdown"><a href="calendar.html">Calendar <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="calendar.html">My Calendar</a></li>
+                                <li><a href="blogtwo.html">Test Page</a></li>
+                                <li><a href="blogthree.html">Test Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="portfolio.html">Testing <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="login.html">Login Test</a></li>
+                                <li><a href="chat.html">Chat Test</a></li>
+                                <li><a href="profile.html">Profile Test</a></li>
+                                <li><a href="contactslist.html">Contact List Test</a></li>
+                            </ul>
+                        </li>                         
+                        <li><a href="shortcodes.html ">FAQ</a></li>                    
+                    </ul>
+                </div>
+                <div class="search">
+                    <form role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+                            <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+<div class="chatbox-holder">
+  <div class="chatbox">
+    <div class="chatbox-top">
+      <div class="chatbox-avatar">
+        <a target="_blank" href="https://www.facebook.com/mfreak"><img src="https://gravatar.com/avatar/2449e413ade8b0c72d0a15d153febdeb?s=512&d=https://codepen.io/assets/avatars/user-avatar-512x512-6e240cf350d2f1cc07c2bed234c3a3bb5f1b237023c204c782622e80d6b212ba.png" /></a> 
+      </div>
+      <div class="chat-partner-name">
+        <span class="status online"></span>
+        <a target="_blank" href="https://www.facebook.com/mfreak">Mamun Khandaker</a>
+      </div>
+      <div class="chatbox-icons">
+        <a href="javascript:void(0);"><i class="fa fa-minus"></i></a>
+        <a href="javascript:void(0);"><i class="fa fa-close"></i></a>       
+      </div>      
+    </div>
     
-  </div> <!-- end container -->
+    <div class="chat-messages">
+       <div class="message-box-holder">
+        <div class="message-box">
+          Hello
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-sender">
+           Mamun Khandaker
+         </div>
+        <div class="message-box message-partner">
+          Hi.
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-box">
+          How are you doing?
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-sender">
+           Mamun Khandaker
+         </div>
+        <div class="message-box message-partner">
+          I'm doing fine. How about you?
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-box">
+          I am fine.
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-box">
+          Do you know why I knocked you today?
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-box">
+          There's something important I would like to share with you. Do you have some time?
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-sender">
+           Mamun Khandaker
+         </div>
+        <div class="message-box message-partner">
+          Yeah sure. Let's meet in the Einstein cafe this evening and discuss the matter.
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-sender">
+           Mamun Khandaker
+         </div>
+        <div class="message-box message-partner">
+          I thought of coming to your place and discuss about it but I had to finish my projects and I didn't have enough time to go out of the house.
+        </div>
+      </div>      
+    </div>
+    
+    <div class="chat-input-holder">
+      <textarea class="chat-input"></textarea>
+      <input type="submit" value="Send" class="message-send" />
+    </div>
+    <div class="attachment-panel">
+      <a href="#" class="fa fa-thumbs-up"></a>
+      <a href="#" class="fa fa-camera"></a>
+      <a href="#" class="fa fa-video-camera"></a>
+      <a href="#" class="fa fa-image"></a>
+      <a href="#" class="fa fa-paperclip"></a>
+      <a href="#" class="fa fa-link"></a>
+      <a href="#" class="fa fa-trash-o"></a>
+      <a href="#" class="fa fa-search"></a>
+    </div>
+  </div>
+  
+  <div class="chatbox group-chat">
+    <div class="chatbox-top">
+      <div class="chatbox-avatar">
+        <a target="_blank" href="https://www.facebook.com/mfreak"><img src="https://avatars0.githubusercontent.com/u/7145968?v=3&s=460" /></a>
+      </div>
+      
+      <div class="chat-group-name">
+        <span class="status away"></span>
+        Group name comes here
+      </div>
+      <div class="chatbox-icons">
+        <label for="chkSettings"><i class="fa fa-gear"></i></label><input type="checkbox" id="chkSettings" />
+        <div class="settings-popup">
+          <ul>
+            <li><a href="#">Group members</a></li>
+            <li><a href="#">Add members</a></li>
+            <li><a href="#">Delete members</a></li>
+            <li><a href="#">Leave group</a></li>
+          </ul>
+        </div>
+        <a href="javascript:void(0);"><i class="fa fa-minus"></i></a>
+        <a href="javascript:void(0);"><i class="fa fa-close"></i></a>       
+      </div>      
+    </div>
+    
+    <div class="chat-messages">
+       <div class="message-box-holder">
+        <div class="message-box">
+          What are you people doing?
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-sender">
+          <a href="#">Ben Stiller</a>
+         </div>
+        <div class="message-box message-partner">
+          Hey, nobody's here today. I'm at office alone.
+          Hey, nobody's here today. I'm at office alone.
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-box">
+          who else is online?
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-sender">
+          <a href="#">Chris Jerrico</a>
+         </div>
+        <div class="message-box message-partner">
+          I'm also online. How are you people?
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-box">
+          I am fine.
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-sender">
+          <a href="#">Rockey</a>
+         </div>
+        <div class="message-box message-partner">
+          I'm also online. How are you people?
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-sender">
+          <a href="#">Christina Farzana</a>
+         </div>
+        <div class="message-box message-partner">
+          We are doing fine. I am in.
+        </div>
+      </div>      
+    </div>
+    
+    <div class="chat-input-holder">
+      <textarea class="chat-input"></textarea>
+      <input type="submit" value="Send" class="message-send" />
+    </div>
+    
+    <div class="attachment-panel">
+      <a href="#" class="fa fa-thumbs-up"></a>
+      <a href="#" class="fa fa-camera"></a>
+      <a href="#" class="fa fa-video-camera"></a>
+      <a href="#" class="fa fa-image"></a>
+      <a href="#" class="fa fa-paperclip"></a>
+      <a href="#" class="fa fa-link"></a>
+      <a href="#" class="fa fa-trash-o"></a>
+      <a href="#" class="fa fa-search"></a>
+    </div>
+  </div>
+  
+  <div class="chatbox chatbox-min">
+    <div class="chatbox-top">
+      <div class="chatbox-avatar">
+        <a target="_blank" href="https://www.facebook.com/mfreak"><img src="https://lh3.googleusercontent.com/-iJhKZHM5Kqs/Vgg2r91epsI/AAAAAAAAAgo/uGT4-sqPJzg/w800-h800/IMG_1339.jpg" /></a>
+      </div>
+      <div class="chat-partner-name">
+        <span class="status donot-disturb"></span>
+        <a target="_blank" href="https://www.facebook.com/mfreak">Mamun Khandaker</a>
+      </div>
+      <div class="chatbox-icons">
+        <a href="javascript:void(0);"><i class="fa fa-minus"></i></a>
+        <a href="javascript:void(0);"><i class="fa fa-close"></i></a>       
+      </div>      
+    </div>
+    
+    <div class="chat-messages">
+       <div class="message-box-holder">
+        <div class="message-box">
+          Hello
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-sender">
+           Mamun Khandaker
+         </div>
+        <div class="message-box message-partner">
+          Hi.
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-box">
+          How are you doing?
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-sender">
+           Mamun Khandaker
+         </div>
+        <div class="message-box message-partner">
+          I'm doing fine. How about you?
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-box">
+          I am fine.
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-box">
+          Do you know why I knocked you today?
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-box">
+          There's something important I would like to share with you. Do you have some time?
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-sender">
+           Mamun Khandaker
+         </div>
+        <div class="message-box message-partner">
+          Yeah sure. Let's meet in the Einstein cafe this evening and discuss the matter.
+        </div>
+      </div>
+      
+      <div class="message-box-holder">
+        <div class="message-sender">
+           Mamun Khandaker
+         </div>
+        <div class="message-box message-partner">
+          I thought of coming to your place and discuss about it but I had to finish my projects and I didn't have enough time to go out of the house.
+        </div>
+      </div>      
+    </div>
+    
+    <div class="chat-input-holder">
+      <textarea class="chat-input"></textarea>
+      <input type="submit" value="Send" class="message-send" />
+    </div>
+    
+    <div class="attachment-panel">
+      <a href="#" class="fa fa-thumbs-up"></a>
+      <a href="#" class="fa fa-camera"></a>
+      <a href="#" class="fa fa-video-camera"></a>
+      <a href="#" class="fa fa-image"></a>
+      <a href="#" class="fa fa-paperclip"></a>
+      <a href="#" class="fa fa-link"></a>
+      <a href="#" class="fa fa-trash-o"></a>
+      <a href="#" class="fa fa-search"></a>
+    </div>
+  </div>
+</div>
 
-<script id="message-template" type="text/x-handlebars-template">
-  <li class="clearfix">
-    <div class="message-data align-right">
-      <span class="message-data-time" >{{time}}, Today</span> &nbsp; &nbsp;
-      <span class="message-data-name" >Olia</span> <i class="fa fa-circle me"></i>
-    </div>
-    <div class="message other-message float-right">
-      {{messageOutput}}
-    </div>
-  </li>
-</script>
-
-<script id="message-response-template" type="text/x-handlebars-template">
-  <li>
-    <div class="message-data">
-      <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
-      <span class="message-data-time">{{time}}, Today</span>
-    </div>
-    <div class="message my-message">
-      {{response}}
-    </div>
-  </li>
-</script>
-    <script src="js/chat.js"></script>
-    </body>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script> 
+    <script type="text/javascript" src="js/chat.js"></script> 
+</body>
 </html>
