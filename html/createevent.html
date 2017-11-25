@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Home | PlanIT</title>
+    <title>Create Event | PlanIT</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet"> 
     <link href="css/lightbox.css" rel="stylesheet"> 
+    <link href="css/animate.min.css" rel="stylesheet"> 
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
+        <link href="css/createevent.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
 	    <script src="js/html5shiv.js"></script>
 	    <script src="js/respond.min.js"></script>
     <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
@@ -103,152 +105,70 @@
     </header>
     <!--/#header-->
 
-    <section id="home-slider">
-        <div class="container">
-            <div class="row">
-                <div class="main-slider">
-                    <div class="slide-text">
-                        <h1>Welcome to PlanIT</h1>
-                        <p>Not already a member?</p>
-                        <a href="signup.html" class="btn btn-common">SIGN UP</a>
-                    </div>
-                    <img src="images/home/slider/hill.png" class="slider-hill" alt="slider image">
-                    <img src="images/home/slider/house.png" class="slider-house" alt="slider image">
-                    <img src="images/home/slider/sun.png" class="slider-sun" alt="slider image">
-                    <img src="images/home/slider/birds1.png" class="slider-birds1" alt="slider image">
-                    <img src="images/home/slider/birds2.png" class="slider-birds2" alt="slider image">
-                </div>
-            </div>
-        </div>
-        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
-    </section>
-    <!--/#home-slider-->
+<form class="form-horizontal">
+    <fieldset>
 
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                    <div class="single-service">
-                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <img src="images/home/icon1.png" alt="">
-                        </div>
-                        <h2>User Friendly</h2>
-                        <p>[Text]</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
-                    <div class="single-service">
-                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
-                            <img src="images/home/icon2.png" alt="">
-                        </div>
-                        <h2>Smooth Design and Interface</h2>
-                        <p>[Text]</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
-                    <div class="single-service">
-                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
-                            <img src="images/home/icon3.png" alt="">
-                        </div>
-                        <h2>It's Free!</h2>
-                        <p>[Text]</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--/#services-->
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Event Name</label>
+            <div class="col-md-6">
+                <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required="">
 
-    <section id="action" class="responsive">
-        <div class="vertical-center">
-             <div class="container">
-                <div class="row">
-                    <div class="action take-tour">
-                        <div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <h1 class="title">PlanIt [text]</h1>
-                            <p>[Text]</p>
-                        </div>
-                        <div class="col-sm-5 text-center wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <div class="tour-button">
-                                <a href="#" class="btn btn-common">Create an Event!</a>
-                             </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-   </section>
-    <!--/#action-->
 
-    <section id="features">
-        <div class="container">
-            <div class="row">
-                <div class="single-features">
-                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/image1.png" class="img-responsive" alt="">
-                    </div>
-                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Experienced and Enthusiastic</h2>
-                        <P>[Text]</P>
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Built for the Responsive Web</h2>
-                        <P>[Text]</P>
-                    </div>
-                    <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/image2.png" class="img-responsive" alt="">
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/image3.png" class="img-responsive" alt="">
-                    </div>
-                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Experienced and Enthusiastic</h2>
-                        <P>[Text]</P>
-                    </div>
-                </div>
+        <!-- Select Basic -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="eventType">Type</label>
+            <div class="col-md-4">
+                <select id="eventType" name="eventType" class="form-control">
+                    <option value="TOURNAMENT">Tournament</option>
+                    <option value="PRACTICE">Practice Round</option>
+                </select>
             </div>
         </div>
-    </section>
-     <!--/#features-->
 
-    <section id="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <p><img src="images/home/clients.png" class="img-responsive" alt=""></p>
-                        <h1 class="title">Happy Clients :)</h1>
-                        <p>[Text] </p>
-                    </div>
-                    <div class="clients-logo wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client1.png" class="img-responsive" alt=""></a>
-                        </div>
-                        <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client2.png" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client3.png" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client4.png" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client5.png" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client6.png" class="img-responsive" alt=""></a>
-                        </div>
-                    </div>
+        <!-- Appended Input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="eventDate">Date</label>
+            <div class="col-md-4">
+                <div class="input-group">
+                    <input id="eventDate" name="eventDate" class="form-control" placeholder="DD/MM/YYYY" type="text" required="">
+                    <span class="input-group-addon">Calendar</span>
                 </div>
+
             </div>
         </div>
-     </section>
-    <!--/#clients-->
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="venueName">Venue</label>
+            <div class="col-md-6">
+                <input id="venueName" name="venueName" type="text" placeholder="" class="form-control input-md">
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="venueName">Description</label>
+            <div class="col-md-6">
+                <input id="description" name="description" type="text" placeholder="" class="form-control input-md">
+
+            </div>
+        </div>
+        
+        <!-- Button (Double) -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="submitButton"></label>
+            <div class="col-md-8">
+                <button id="submitButton" name="submitButton" class="btn btn-primary">Save</button>
+                <button id="cancelButton" name="cancelButton" class="btn btn-danger">Cancel</button>
+            </div>
+        </div>
+
+        
+        
+    </fieldset>
+</form>
 
     <footer id="footer">
         <div class="container">
@@ -324,10 +244,12 @@
     </footer>
     <!--/#footer-->
 
+
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>   
+    <script type="text/javascript" src="js/main.js"></script> 
+    <script type="text/javascript" src="js/createevent.js"></script> 
 </body>
 </html>
