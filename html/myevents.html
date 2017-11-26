@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     
-    <head>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="myevents.css" rel="stylesheet">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-            <title>Events | PlanIT</title>
+    <title>Events | PlanIT</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/lightbox.css" rel="stylesheet"> 
     <link href="css/animate.min.css" rel="stylesheet"> 
-	<link href="css/main.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link href="css/myevents.css" rel="stylesheet">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head>
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <body>
-        	<header id="header">      
+
+<!--
+Arlo Web Control Demo - Events list
+Documentation: https://developer.arlo.co/doc/webcontrols/upcomingevents
+-->
+<body>
+	<header id="header">      
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 overflow">
@@ -65,9 +74,9 @@
                         </li>
                         <li class="dropdown"><a href="portfolio.html">Account <i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
+                                <li><a href="logout.html">Logout</a></li>
                                 <li><a href="profile.html">Profile</a></li>
                                 <li><a href="contactslist.html">Contacts</a></li>
-                                <li><a href="logout.html">Logout</a></li>
                             </ul>
                         </li>
                         <li class="dropdown"><a href="portfolio.html">More <i class="fa fa-angle-down"></i></a>
@@ -92,193 +101,104 @@
         </div>
     </header>
     <!--/#header-->
-         <div class="container">
-		<div class="row">
-			<div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ]">
-				<ul class="event-list">
-					<li>
-						<time datetime="2014-07-20">
-							<span class="day">4</span>
-							<span class="month">Jul</span>
-							<span class="year">2014</span>
-							<span class="time">ALL DAY</span>
-						</time>
-						<img alt="Independence Day" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg" />
-						<div class="info">
-							<h2 class="title">Independence Day</h2>
-							<p class="desc">United States Holiday</p>
-						</div>
-						<div class="social">
-							<ul>
-								<li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
-								<li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
-								<li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
-							</ul>
-						</div>
-					</li>
+    
+  <!-- Target Elements -->
+  <div class="arlo">
+    <div class="arlo-filters-container">
+      <div id="filters"></div>
 
-					<li>
-						<time datetime="2014-07-20 0000">
-							<span class="day">8</span>
-							<span class="month">Jul</span>
-							<span class="year">2014</span>
-							<span class="time">12:00 AM</span>
-						</time>
-						<div class="info">
-							<h2 class="title">One Piece Unlimited World Red</h2>
-							<p class="desc">PS Vita</p>
-							<ul>
-								<li style="width:50%;"><a href="#website"><span class="fa fa-globe"></span> Website</a></li>
-								<li style="width:50%;"><span class="fa fa-money"></span> $39.99</li>
-							</ul>
-						</div>
-						<div class="social">
-							<ul>
-								<li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
-								<li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
-								<li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
-							</ul>
-						</div>
-					</li>
-
-					<li>
-						<time datetime="2014-07-20 2000">
-							<span class="day">20</span>
-							<span class="month">Jan</span>
-							<span class="year">2014</span>
-							<span class="time">8:00 PM</span>
-						</time>
-						<img alt="My 24th Birthday!" src="https://farm5.staticflickr.com/4150/5045502202_1d867c8a41_q.jpg" />
-						<div class="info">
-							<h2 class="title">Mouse0270's 24th Birthday!</h2>
-							<p class="desc">Bar Hopping in Erie, Pa.</p>
-							<ul>
-								<li style="width:33%;">1 <span class="glyphicon glyphicon-ok"></span></li>
-								<li style="width:34%;">3 <span class="fa fa-question"></span></li>
-								<li style="width:33%;">103 <span class="fa fa-envelope"></span></li>
-							</ul>
-						</div>
-						<div class="social">
-							<ul>
-								<li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
-								<li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
-								<li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
-							</ul>
-						</div>
-					</li>
-
-					<li>
-						<time datetime="2014-07-31 1600">
-							<span class="day">31</span>
-							<span class="month">Jan</span>
-							<span class="year">2014</span>
-							<span class="time">4:00 PM</span>
-						</time>
-						<img alt="Disney Junior Live On Tour!" src="http://www.thechaifetzarena.com/images/main/DL13_PiratePrincess_thumb.jpg" />
-						<div class="info">
-							<h2 class="title">Disney Junior Live On Tour!</h2>
-							<p class="desc"> Pirate and Princess Adventure</p>
-							<ul>
-								<li style="width:33%;">$49.99 <span class="fa fa-male"></span></li>
-								<li style="width:34%;">$29.99 <span class="fa fa-child"></span></li>
-							</ul>
-						</div>
-						<div class="social">
-							<ul>
-								<li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
-								<li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
-								<li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-     <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center bottom-separator">
-                    <img src="images/home/under.png" class="img-responsive inline" alt="">
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="testimonial bottom">
-                        <h2>Testimonials</h2>
-                        <div class="media">
-                            <div class="pull-left">
-                                <a href="#"><img src="images/home/profile1.png" alt=""></a>
-                            </div>
-                            <div class="media-body">
-                                <blockquote>blah</blockquote>
-                                <h3><a href="#">- Source 1</a></h3>
-                            </div>
-                         </div>
-                        <div class="media">
-                            <div class="pull-left">
-                                <a href="#"><img src="images/home/profile2.png" alt=""></a>
-                            </div>
-                            <div class="media-body">
-                                <blockquote>blah</blockquote>
-                                <h3><a href="">- Source 2</a></h3>
-                            </div>
-                        </div>   
-                    </div> 
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="contact-info bottom">
-                        <h2>Contacts</h2>
-                        <address>
-                        E-mail: <a href="mailto:someone@example.com">PlanIT@gmail.com</a> <br> 
-                        Phone: +1 (504) 220 6857 <br> 
-                        </address>
-
-                        <h2>Address</h2>
-                        <address>
-                        2133 MT Hope Aly <br> 
-                        Baton Rouge, LA 70803 <br> 
-                        </address>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="contact-form bottom">
-                        <h2>Send a message</h2>
-                        <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" required="required" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" class="form-control" required="required" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your text here"></textarea>
-                            </div>                        
-                            <div class="form-group">
-                                <input type="submit" name="submit" class="btn btn-submit" value="Submit">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-sm-12">
-                    <div class="copyright-text text-center">
-                        <p>&copy; PlanIT 2017. All Rights Reserved.</p>
-                        <p>Designed by <a target="_blank" href="http://www.lsu.edu">LSU</a></p>
-                    </div>
-                </div>
-            </div>
+      <div id="arlo-filter-toggle">
+        <div class="arlo-filter-toggle-show">
+          Show filters <i class="fa fa-chevron-down"></i>
         </div>
-    </footer>
-    <!--/#footer-->
+        <div class="arlo-filter-toggle-hide">
+          Hide filters <i class="fa fa-chevron-up"></i>
+        </div>
+      </div>
+    </div>
+    <div id="upcoming-events"></div>
+  </div>
+
+  <!-- Templates -->
+  <script type='text/template' id='filter-template'>
+    <div class="arlo-filters arlo-font-primary">
+      <div class="arlo-other-filters arlo-clearfix arlo-font-primary">
+        <%= showFilter({filterCode: "templatecategory"}) %>
+        <%= showFilter({filterCode: "months"}) %>
+        <%= showFilter({filterCode: "locname", callbacks: {onRender: "locationfiltertoggle"}}) %>
+      </div>
+    </div>
+  </script>
+
+  <script type='text/template' id='upcoming-events-template'>
+    <% if (typeof(Location.IsOnline) !== "undefined" && Location.IsOnline === true && (typeof(Location.Name) !== "undefined" && Location.Name !== "")) { %>
+      <div class="arlo-event-card arlo-online-card">
+    <% } else { %>
+      <div class="arlo-event-card">
+    <% } %>
+
+          <div class="arlo-event-card-front">
+            
+            <div class="arlo-date">
+              <div class="arlo-date-container arlo-text-color-contrast">
+                <div class="arlo-start-date">
+                  <%= SmartDateFields.startDay %>
+                </div>
+                <div class="arlo-start-month">
+                  <%= SmartDateFields.startMonth %>
+                </div>
+              </div>
+            </div>
+            
+            <div class="arlo-event-image">
+            
+            </div>
+
+            <div class="arlo-detail">
+              <% if (typeof(Provider.Name) !== "undefined" && Provider.Name !== "") { %>
+                <div class="arlo-provider-name">
+                  Provided by <%= Provider.Name %>
+                </div>
+              <% }%>
+              
+              <div class="arlo-name arlo-text-color-contrast">
+                <%- Name %>
+              </div>
+
+              <div class="arlo-location arlo-text-color-contrast">
+                <%- Location.Name %>
+              </div>
+            </div>
+
+          </div>
+
+            <div class="arlo-event-card-back">
+
+              <div class="arlo-summary arlo-text-color-contrast">
+                <%- Summary %>
+              </div>
+
+              <%= formatRegistrationInfo('link') %>
+              <span class="arlo-loadEventTemplateHiddenButtonContainer">
+                <%= showEventTemplateInformation({message:"View Template Details",
+                template:"#event-template-template", showLoadButton: false, targetElement: "arlo-eventTemplatetarget", callbacks: {onShow: "eventTemplateLoaded" } }) %>
+              </span>
+
+            </div>        
+      </div>
+
+  </script>
+
+  <!-- Dependencies -->
+  <script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="//packages.arlocdn.net/jscontrols/1.0/resources/resizesensor.js" charset="utf-8"></script>
+  <script type="text/javascript" src="//packages.arlocdn.net/jscontrols/1.0/resources/elementqueries.js" charset="utf-8"></script>
+  <script type="text/javascript" src="//connect.arlocdn.net/jscontrols/1.0/init.js" charset="utf-8" defer="defer"></script>
 
 
+ 
+    <script type="text/javascript" src="js/myevents.js"></script>   
 
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/tether/tether.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/lightbox.min.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>   
-</body>
-
+    </body>
 </html>

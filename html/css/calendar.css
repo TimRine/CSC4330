@@ -70,7 +70,7 @@ body {
 
 .month {
   /*overflow: hidden;*/
-background-color: #fff; 
+background-color: #fff 
 }
 
 .month.new {
@@ -275,6 +275,7 @@ opacity: 1;
   font-size: 13px;
   display: inline-block;
   line-height: 30px;
+  background: transparent;
 }
 
 .entry:after {
