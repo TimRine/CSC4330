@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Contact Us | PlanIT</title>
+    <title>Create Event | PlanIT</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet"> 
-    <link href="css/animate.min.css" rel="stylesheet"> 
-	<link href="css/main.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/defineRoles.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
-	    <script src="js/html5shiv.js"></script>
-	    <script src="js/respond.min.js"></script>
-    <![endif]-->       
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -72,18 +73,20 @@
                             <a href="calendar.html">Calendar <i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="calendar.html">My Calendar</a></li>
+                                <li><a href="blogtwo.html">Test Page</a></li>
+                                <li><a href="blogthree.html">Test Page</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="profile.html">Account <i class="fa fa-angle-down"></i></a>
+                            <a href="portfolio.html">Account <i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
+                                <li><a href="logout.html">Logout</a></li>
                                 <li><a href="profile.html">Profile</a></li>
                                 <li><a href="contactslist.html">Contacts</a></li>
-                                <li><a href="logout.html">Logout</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="aboutus.html">More <i class="fa fa-angle-down"></i></a>
+                            <a href="portfolio.html">More <i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="faq.html">FAQ</a></li>
                                 <li><a href="aboutus.html">About Us</a></li>
@@ -105,28 +108,90 @@
         </div>
     </header>
     <!--/#header-->
+    <form class="form-horizontal">
+        <fieldset>
 
-    <section id="page-breadcrumb">
-        <div class="vertical-center sun">
-             <div class="container">
+            <!-- HIDDEN DYNAMIC ELEMENT TO CLONE -->
+            <!-- you can replace it with any other elements -->
+            <div class="form-group dynamic-element" style="display:none">
                 <div class="row">
-                    <div class="action">
-                        <div class="col-sm-12">
-                            <h1 class="title">Contact US</h1>
-                            <p>Contact the PlanIt Team!</p>
-                        </div>                        
+                    <div class="col-md-2"></div>
+
+                    <!-- Replace these fields -->
+                    <div class="col-md-4">
+                        <select id="member" name="member[]" class="form-control">
+                            <option>Role</option>
+                            <option value="1">Event Coordinator</option>
+                            <option value="2">Event Planner</option>
+                            <option value="3">Administrator</option>
+                            <option value="4">Moderator</option>
+                            <option value="5">Member</option>
+                            <option value="6">Guest</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <select id="role" name="role[]" class="form-control">
+                            <option>Role Number</option>
+                            <option value="1">Role 1</option>
+                            <option value="2">Role 2</option>
+                            <option value="3">Role 3</option>
+                            <option value="4">Role 4</option>
+                            <option value="5">Role 5</option>
+                            <option value="6">Role 6</option>
+                        </select>
+                    </div>
+                    <!-- End of fields-->
+                    <div class="col-md-1">
+                        <p class="delete">x</p>
                     </div>
                 </div>
             </div>
-        </div>
-   </section>
-    <!--/#action-->
+            <!-- END OF HIDDEN ELEMENT -->
 
-    <section id="map-section">
-        <div class="container">
-            <div id="gmap"></div>
-        </div>
-    </section> <!--/#map-section-->        
+            <div class="form-container">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <!-- Form Name -->
+                        <legend class="title">Choose Your Event Roles</legend>
+                        
+
+                        <div class="dynamic-stuff">
+                            <!-- Dynamic element will be cloned here -->
+                            <!-- You can call clone function once if you want it to show it a first element-->
+                        </div>
+
+                        <!-- Button -->
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="add-one">+ Aditional Role</p>
+                                </div>
+                                <div class="col-md-5"></div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <!-- Button (Double) -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="submitButton"></label>
+                <div class="col-md-8">
+                    <button id="submitButton" name="submitButton" class="btn btn-primary">Next Step</button>
+                    <button id="cancelButton" name="cancelButton" class="btn btn-danger">Cancel</button>
+
+                    <script type="text/javascript">
+                        document.getElementById("submitButton").onclick = function () {
+                            location.href = "defineRoles.html";
+                        };
+                    </script>
+                </div>
+            </div>
+
+
+
+        </fieldset>
+    </form>
 
     <footer id="footer">
         <div class="container">
@@ -205,9 +270,9 @@
 
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script type="text/javascript" src="js/gmaps.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>   
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/defineRoles.js"></script>
 </body>
 </html>
