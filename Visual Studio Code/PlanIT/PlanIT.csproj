@@ -147,10 +147,6 @@
     <Content Include="Content\css\calendar.css" />
     <Content Include="Content\css\chat.css" />
     <Content Include="Content\css\contactslist.css" />
-<<<<<<< HEAD
-    <Content Include="Content\css\defineRoles.css" />
-=======
->>>>>>> 969f76783a15871e9f0dc9d3b139fbcfba4a1946
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\lightbox.css" />
     <Content Include="Content\css\login.css" />
@@ -161,10 +157,6 @@
     <Content Include="Content\css\responsive.css" />
     <Content Include="Content\css\signup.css" />
     <Content Include="Content\css\Site.css" />
-<<<<<<< HEAD
-    <Content Include="Content\defineRoles.html" />
-=======
->>>>>>> 969f76783a15871e9f0dc9d3b139fbcfba4a1946
     <Content Include="Content\faq.html" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
@@ -309,10 +301,6 @@
     <Content Include="Content\js\chat.js" />
     <Content Include="Content\js\contactslist.js" />
     <Content Include="Content\js\coundown-timer.js" />
-<<<<<<< HEAD
-    <Content Include="Content\js\defineRoles.js" />
-=======
->>>>>>> 969f76783a15871e9f0dc9d3b139fbcfba4a1946
     <Content Include="Content\js\gmaps.js" />
     <Content Include="Content\js\holder.js" />
     <Content Include="Content\js\html5shiv.js" />
