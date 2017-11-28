@@ -35,3 +35,40 @@ C:\Users\TJ\source\repos\PlanIT\PlanIT\obj\Debug\PlanIT.csprojResolveAssemblyRef
 C:\Users\TJ\source\repos\PlanIT\PlanIT\obj\Debug\PlanIT.csproj.CoreCompileInputs.cache
 C:\Users\TJ\source\repos\PlanIT\PlanIT\obj\Debug\PlanIT.dll
 C:\Users\TJ\source\repos\PlanIT\PlanIT\obj\Debug\PlanIT.pdb
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\ApplicationInsights.config
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\PlanIT.dll.config
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\PlanIT.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\PlanIT.pdb
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Antlr3.Runtime.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.AI.Web.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Newtonsoft.Json.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\System.Web.Optimization.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\WebGrease.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\System.Web.Optimization.xml
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Antlr3.Runtime.pdb
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Newtonsoft.Json.xml
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\bin\Microsoft.AI.Web.xml
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\obj\Debug\PlanIT.csprojResolveAssemblyReference.cache
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\obj\Debug\PlanIT.csproj.CoreCompileInputs.cache
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\obj\Debug\PlanIT.dll
+C:\Users\Timothy\Documents\GitHub\CSC4330\Visual Studio Code\PlanIT\obj\Debug\PlanIT.pdb
