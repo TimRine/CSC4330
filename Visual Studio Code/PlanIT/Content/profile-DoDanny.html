@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Create Event | PlanIT</title>
+    <title>Profile | PlanIT</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/lightbox.css" rel="stylesheet"> 
-    <link href="css/animate.min.css" rel="stylesheet"> 
-	<link href="css/main.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
-    <link href="css/createevent.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
-	    <script src="js/html5shiv.js"></script>
-	    <script src="js/respond.min.js"></script>
-    <![endif]-->       
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -107,81 +107,80 @@
     </header>
     <!--/#header-->
 
-<form class="form-horizontal">
-    <fieldset>
+    <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad">
 
-        <!-- Text input-->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="textinput">Event Name</label>
-            <div class="col-md-6">
-                <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required="">
-            </div>
-        </div>
 
-        <!-- Select Basic -->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="eventType">Type</label>
-            <div class="col-md-4">
-                <select id="eventType" name="eventType" class="form-control">
-                    <option value="TOURNAMENT">Tournament</option>
-                    <option value="PRACTICE">Practice Round</option>
-                </select>
-            </div>
-        </div>
-
-        <!-- Appended Input-->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="eventDate">Date</label>
-            <div class="col-md-4">
-                <div class="input-group">
-                    <input id="eventDate" name="eventDate" class="form-control" placeholder="DD/MM/YYYY" type="text" required="">
-                    <span class="input-group-addon">Calendar</span>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Danny Do</h3>
                 </div>
-            </div>
-        </div>
-        <!-- Text input-->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="venueName">Location</label>
-            <div class="col-md-6">
-                <input id="locationName" name="locationName" type="text" placeholder="Baton Rouge, LA" class="form-control input-md">
-            </div>
-        </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="images/aboutus/DannyProfile.jpg" class="img-circle img-responsive"> </div>
 
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="textinput">Zip Code</label>
-            <div class="col-md-6">
-                <input id="zipCode" name="zipCode" type="text" placeholder="00000" class="form-control input-md" required="">
-            </div>
-        </div>
+                        <!--<div class="col-xs-10 col-sm-10 hidden-md hidden-lg"> <br>
+                          <dl>
+                            <dt>DEPARTMENT:</dt>
+                            <dd>Administrator</dd>
+                            <dt>HIRE DATE</dt>
+                            <dd>11/12/2013</dd>
+                            <dt>DATE OF BIRTH</dt>
+                               <dd>11/12/2013</dd>
+                            <dt>GENDER</dt>
+                            <dd>Male</dd>
+                          </dl>
+                        </div>-->
+                        <div class=" col-md-9 col-lg-9 ">
+                            <table class="table table-user-information">
+                                <tbody>
+                                    <tr>
+                                        <td>Job:</td>
+                                        <td>Student</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date of Birth</td>
+                                        <td>12/22/1995</td>
+                                    </tr>
+                                    <tr>
+                                    <tr>
+                                        <td>Gender</td>
+                                        <td>Male</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Home Address</td>
+                                        <td>2133 Mt Hope Aly<br>Baton Rouge, LA 70820</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email</td>
+                                        <td><a href="mailto:tjrine22@gmail.com">dnnydo7@gmail.com</a></td>
+                                    </tr>
+                                <td>Phone Number</td>
+                                <td>
+                                    (504)220-6857<br>
+                                </td>
 
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="venueName">Description</label>
-            <div class="col-md-6">
-                <input id="description" name="description" type="text" placeholder="Describe your event!" class="form-control input-md">
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+                            <a href="#" class="btn btn-primary">Add Friend!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+                    <span class="pull-right">
+                        <a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
+                        <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                    </span>
+                </div>
+
             </div>
         </div>
-        
-        <!-- Button (Double) -->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="submitButton"></label>
-            <div class="col-md-8">
-                <button id="submitButton" name="submitButton" class="btn btn-primary">Next Step</button>
-                <button id="cancelButton" name="cancelButton" class="btn btn-danger">Cancel</button>
-                <script type="text/javascript">
-                    document.getElementById("submitButton").onclick = function () {
-                        location.href = "defineRoles.html";
-                    };
-                </script>
-                <script type="text/javascript">
-                                    document.getElementById("cancelButton").onclick = function () {
-                                        location.href = "index.html";
-                    };
-                </script>
-            </div>
-        </div> 
-        
-    </fieldset>
-</form>
+    </div>
+    </div>
 
     <footer id="footer">
         <div class="container">
@@ -262,7 +261,8 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script> 
-    <script type="text/javascript" src="js/createevent.js"></script> 
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/profile.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
