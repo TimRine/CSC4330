@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Create Event | PlanIT</title>
+    <title>Contacts List | PlanIT</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/lightbox.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-    <link href="css/defineRoles.css" rel="stylesheet">
-    <link href="css/createevent.css" rel="stylesheet">
-
+    <link href="css/contactslist.css" rel="stylesheet">
     <!--[if lt IE 9]>
         <script src="js/html5shiv.js"></script>
         <script src="js/respond.min.js"></script>
@@ -25,7 +23,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
-
 <body>
     <header id="header">
         <div class="container">
@@ -52,11 +49,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-
                     <a class="navbar-brand" href="index.html">
                         <h1><img src="images/PlanIt_Logo.png" alt="logo"></h1>
                     </a>
-
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -107,91 +102,118 @@
         </div>
     </header>
     <!--/#header-->
+    <div class="row">
+        <div class="col-xs-12 col-sm-offset-3 col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading c-list">
+                    <span class="title">Invited Guests</span>
+                    <ul class="pull-right c-controls">
+                        <li><a href="myContacts.html" data-toggle="tooltip" data-placement="top" title="Add Contact"><i class="glyphicon glyphicon-plus"></i></a></li>
+                        <li><a href="#" class="hide-search" data-command="toggle-search" data-toggle="tooltip" data-placement="top" title="Toggle Search"><i class="fa fa-ellipsis-v"></i></a></li>
+                    </ul>
+                </div>
 
-    <form class="form-horizontal">
-        <fieldset>
-
-            <!-- HIDDEN DYNAMIC ELEMENT TO CLONE -->
-            <div class="form-group dynamic-element" style="display:none">
-                <div class="row">
-                    <div class="col-md-2"></div>
-
-                    <!-- Replace these fields -->
-                    <div class="col-md-4">
-                        <select id="member" name="member[]" class="form-control">
-                            <option>Role</option>
-                            <option value="1">Event Coordinator</option>
-                            <option value="2">Event Planner</option>
-                            <option value="3">Administrator</option>
-                            <option value="4">Moderator</option>
-                            <option value="5">Member</option>
-                            <option value="6">Guest</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3">
-                        <select id="role" name="role[]" class="form-control">
-                            <option>Role Number</option>
-                            <option value="1">Role 1</option>
-                            <option value="2">Role 2</option>
-                            <option value="3">Role 3</option>
-                            <option value="4">Role 4</option>
-                            <option value="5">Role 5</option>
-                            <option value="6">Role 6</option>
-                        </select>
-                    </div>
-                    <!-- End of fields-->
-                    <div class="col-md-1">
-                        <p class="delete">x</p>
+                <div class="row" style="display: none;">
+                    <div class="col-xs-12">
+                        <div class="input-group c-search">
+                            <input type="text" class="form-control" id="contact-list-search">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search text-muted"></span></button>
+                            </span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- END OF HIDDEN ELEMENT -->
 
-            <div class="form-container">
-                <form class="form-horizontal">
-                    <fieldset>
-                        <!-- Form Name -->
-                        <legend class="title">Choose Your Event Roles</legend>
-                        
-
-                        <div class="dynamic-stuff">
-                            <!-- Dynamic element will be cloned here -->
+                <ul class="list-group" id="contact-list">
+                    <li class="list-group-item">
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="images\contactslist\Chris Callan.jpg" alt="Chris Callan" class="img-responsive img-circle" />
                         </div>
-
-                        <!-- Button -->
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="add-one">+ Aditional Role</p>
-                                </div>
-                                <div class="col-md-5"></div>
-                            </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <span class="name">Christopher Callan</span><br />
+                            <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="7396 E North St"></span>
+                            <span class="visible-xs"> <span class="text-muted">7396 E North St</span><br /></span>
+                            <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip" title="(560) 180-4143"></span>
+                            <span class="visible-xs"> <span class="text-muted">(560) 180-4143</span><br /></span>
+                            <span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="chriscallan29@gmail.com"></span>
+                            <span class="visible-xs"> <span class="text-muted">chriscallan29@gmail.com</span><br /></span>
                         </div>
-                    </fieldset>
-                </form>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="images\contactslist\DannyDo.jpg" alt="Danny Do" class="img-responsive img-circle" />
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <span class="name">Danny Do</span><br />
+                            <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="4949 W Dallas St"></span>
+                            <span class="visible-xs"> <span class="text-muted">4949 W Dallas St</span><br /></span>
+                            <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip" title="(477) 792-2822"></span>
+                            <span class="visible-xs"> <span class="text-muted">(477) 792-2822</span><br /></span>
+                            <span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="dnnydo7@gmail.com"></span>
+                            <span class="visible-xs"> <span class="text-muted">dnnydo7@gmail.com</span><br /></span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="images\contactslist\Tuoyo.jpg" alt="Tuoyo Okojie" class="img-responsive img-circle" />
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <span class="name">Oseremen Okojie</span><br />
+                            <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="5133 Pecan Acres Ln"></span>
+                            <span class="visible-xs"> <span class="text-muted">5133 Pecan Acres Ln</span><br /></span>
+                            <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip" title="(522) 991-3367"></span>
+                            <span class="visible-xs"> <span class="text-muted">(522) 991-3367</span><br /></span>
+                            <span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="tuoyookojie@gmail.com"></span>
+                            <span class="visible-xs"> <span class="text-muted"></span><br />tuoyookojie@gmail.com</span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="images\contactslist\hiddenZach.jpg" alt="Zach Goad" class="img-responsive img-circle" />
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <span class="name">Zach Goad</span><br />
+                            <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="5267 Cackson St"></span>
+                            <span class="visible-xs"> <span class="text-muted">5267 Cackson St</span><br /></span>
+                            <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip" title="(497) 160-9776"></span>
+                            <span class="visible-xs"> <span class="text-muted">(497) 160-9776</span><br /></span>
+                            <span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="zqgoad@gmail.com"></span>
+                            <span class="visible-xs"> <span class="text-muted">zqgoad@gmail.com</span><br /></span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                </ul>
             </div>
+        </div>
+    </div>
 
-            <!-- Button (Double) -->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="submitButton"></label>
-                <div class="col-md-8">
-                    <button id="submitButton" name="submitButton" class="btn btn-primary">Next Step</button>
-                    <button id="cancelButton" name="cancelButton" class="btn btn-danger">Cancel</button>
-                    <script type="text/javascript">
-                        document.getElementById("submitButton").onclick = function () {
-                            location.href = "index.html";
-                        };
-                    </script>
-                    <script type="text/javascript">
-                        document.getElementById("cancelButton").onclick = function () {
-                            location.href = "index.html";
-                        };
-                    </script>
+    <div id="cant-do-all-the-work-for-you" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="mySmallModalLabel">Uh Oh!</h4>
                 </div>
-            </div>     
+                <div class="modal-body">
+                    <p>Sorry, we haven't implemented this feature yet D: But stay tuned for updates!</p><br />
+                    <p>
+                        <strong>
+                            Sorry!<br />
+                            ~ PlanIt Team
+                        </strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        </fieldset>
-    </form>
+    <!-- JavaScrip Search Plugin -->
+    <script src="//rawgithub.com/stidges/jquery-searchable/master/dist/jquery.searchable-1.0.0.min.js"></script>
+
+    </div>
 
     <footer id="footer">
         <div class="container">
@@ -229,7 +251,6 @@
                             E-mail: <a href="mailto:someone@example.com">PlanIT@gmail.com</a> <br>
                             Phone: +1 (504) 220 6857 <br>
                         </address>
-
                         <h2>Address</h2>
                         <address>
                             2133 MT Hope Aly <br>
@@ -266,13 +287,42 @@
         </div>
     </footer>
     <!--/#footer-->
-
+    <script type="text/javascript">
+        document.getElementById("profileButton1").onclick = function () {
+            location.href = "profile-CallanChris.html";
+        };
+    </script>
+    <script type="text/javascript">
+        document.getElementById("profileButton2").onclick = function () {
+            location.href = "profile-DoDanny.html";
+        };
+    </script>
+    <script type="text/javascript">
+        document.getElementById("profileButton3").onclick = function () {
+            location.href = "profile-GoadZach.html";
+        };
+    </script>
+    <script type="text/javascript">
+        document.getElementById("profileButton4").onclick = function () {
+            location.href = "profile-MahmoudNash.html";
+        };
+    </script>
+    <script type="text/javascript">
+        document.getElementById("profileButton5").onclick = function () {
+            location.href = "profile-OkojieTuoyo.html";
+        };
+    </script>
+    <script type="text/javascript">
+        document.getElementById("profileButton6").onclick = function () {
+            location.href = "profile.html";
+        };
+    </script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/defineRoles.js"></script>
-    <script type="text/javascript" src="js/createevent.js"></script>
+    <script type="text/javascript" src="js/contactslist.js"></script>
 </body>
 </html>
+
