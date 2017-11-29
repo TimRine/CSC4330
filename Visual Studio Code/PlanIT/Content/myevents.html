@@ -104,92 +104,65 @@ Documentation: https://developer.arlo.co/doc/webcontrols/upcomingevents
     </header>
     <!--/#header-->
     
-  <!-- Target Elements -->
-  <div class="arlo">
-    <div class="arlo-filters-container">
-      <div id="filters"></div>
 
-      <div id="arlo-filter-toggle">
-        <div class="arlo-filter-toggle-show">
-          Show filters <i class="fa fa-chevron-down"></i>
+    <div class="col-md-12"><h2>Upcoming Events</h2></div>
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <div class="overlay">
+                <i class="fa fa-share md"></i>
+            </div>
+            <img class="img-responsive" alt="a" src="http://dreamplaces.org/wp-content/uploads/2017/04/package1320x742.jpg">
         </div>
-        <div class="arlo-filter-toggle-hide">
-          Hide filters <i class="fa fa-chevron-up"></i>
+        <div class="row">
+            <div class="col-md-3">
+                <h3><span class="label label-info">Jun 12</span></h3>
+            </div>
+            <div class="col-md-9">
+                <strong>Business &amp; Entrepreneurs Workshop</strong><br>
+                <em>at Grand Hotel Italia</em><br>
+                <span class="small">10:00 AM - 21:00 PM</span>
+            </div>
         </div>
-      </div>
     </div>
-    <div id="upcoming-events"></div>
-  </div>
 
-  <!-- Templates -->
-  <script type='text/template' id='filter-template'>
-    <div class="arlo-filters arlo-font-primary">
-      <div class="arlo-other-filters arlo-clearfix arlo-font-primary">
-        <%= showFilter({filterCode: "templatecategory"}) %>
-        <%= showFilter({filterCode: "months"}) %>
-        <%= showFilter({filterCode: "locname", callbacks: {onRender: "locationfiltertoggle"}}) %>
-      </div>
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <div class="overlay">
+                <i class="fa fa-share md"></i>
+            </div>
+            <img class="img-responsive" alt="a" src="/assets/example/bg_10.jpg">
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h3><span class="label label-info">Jun 30</span></h3>
+            </div>
+            <div class="col-md-9">
+                <strong>Business &amp; Entrepreneurs Workshop</strong><br>
+                <em>at Grand Hotel Italia</em><br>
+                <span class="small">1:00 PM - 4:00 PM</span>
+            </div>
+        </div>
     </div>
-  </script>
 
-  <script type='text/template' id='upcoming-events-template'>
-    <% if (typeof(Location.IsOnline) !== "undefined" && Location.IsOnline === true && (typeof(Location.Name) !== "undefined" && Location.Name !== "")) { %>
-      <div class="arlo-event-card arlo-online-card">
-    <% } else { %>
-      <div class="arlo-event-card">
-    <% } %>
-
-          <div class="arlo-event-card-front">
-            
-            <div class="arlo-date">
-              <div class="arlo-date-container arlo-text-color-contrast">
-                <div class="arlo-start-date">
-                  <%= SmartDateFields.startDay %>
-                </div>
-                <div class="arlo-start-month">
-                  <%= SmartDateFields.startMonth %>
-                </div>
-              </div>
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <div class="overlay">
+                <i class="fa fa-share md"></i>
             </div>
-            
-            <div class="arlo-event-image">
-            
+            <img class="img-responsive" alt="a" src="/assets/example/bg_10.jpg">
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h3><span class="label label-info">Jul 22</span></h3>
             </div>
-
-            <div class="arlo-detail">
-              <% if (typeof(Provider.Name) !== "undefined" && Provider.Name !== "") { %>
-                <div class="arlo-provider-name">
-                  Provided by <%= Provider.Name %>
-                </div>
-              <% }%>
-              
-              <div class="arlo-name arlo-text-color-contrast">
-                <%- Name %>
-              </div>
-
-              <div class="arlo-location arlo-text-color-contrast">
-                <%- Location.Name %>
-              </div>
+            <div class="col-md-9">
+                <strong>Learning Mobile Development</strong><br>
+                <em>at Hotel Parkside</em><br>
+                <span class="small">9:00 AM - 11:00 PM</span>
             </div>
+        </div>
+    </div>
 
-          </div>
-
-            <div class="arlo-event-card-back">
-
-              <div class="arlo-summary arlo-text-color-contrast">
-                <%- Summary %>
-              </div>
-
-              <%= formatRegistrationInfo('link') %>
-              <span class="arlo-loadEventTemplateHiddenButtonContainer">
-                <%= showEventTemplateInformation({message:"View Template Details",
-                template:"#event-template-template", showLoadButton: false, targetElement: "arlo-eventTemplatetarget", callbacks: {onShow: "eventTemplateLoaded" } }) %>
-              </span>
-
-            </div>        
-      </div>
-
-  </script>
 
   <!-- Dependencies -->
   <script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
