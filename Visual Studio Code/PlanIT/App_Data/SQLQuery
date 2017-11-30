@@ -1,0 +1,55 @@
+CREATE DATABASE planIT;
+
+CREATE TABLE planIT.users(
+	userID int NOT NULL AUTO_INCREMENT,
+	fullname varchar(30) NOT NULL,
+	email varchar(75) NOT NULL,
+	passw varchar(55) NOT NULL,
+	picture varchar(60) NOT NULL DEFAULT "",
+	description varchar(255),
+	Primary key(userID)
+)ENGINE = INNODB;
+
+
+CREATE TABLE planIT.event(
+    eventID int NOT NULL AUTO_INCREMENT,
+	eventType int NOT NULL,
+    eventName varchar(60) NOT NULL,
+    eventDate varchar(60) NOT NULL,
+	eventLoc varchar (60) NOT NULL,
+	eventZip int (5),
+	eventDesc varchar (120) NOT NULL,
+    PRIMARY KEY(eventID)
+)ENGINE = INNODB;
+
+
+CREATE TABLE planIT.friend(
+	userIDA int NOT NULL,
+    userIDB int NOT NULL,
+    PRIMARY KEY(userIDA, userIDB),
+	FOREIGN KEY(userIDA) REFERENCES planIT.users(userID),
+    FOREIGN KEY(userIDB) REFERENCES planIT.users(userID)
+)ENGINE = INNODB;
+
+
+CREATE TABLE planIT.friendRequest(
+    senderID int NOT NULL,
+    recipientID int NOT NULL,
+    status varchar(10) NOT NULL DEFAULT "incomplete",
+    PRIMARY KEY(senderID, recipientID),
+    FOREIGN KEY(senderID) REFERENCES planIT.users(userID),
+    FOREIGN KEY(recipientID) REFERENCES planIT.users(userID)
+)ENGINE = INNODB;
+
+
+INSERT INTO planIT.users(`fullname`, `email`, `passw`, `picture`, `description`) VALUES (Tim Rine,tjrine22@gmail.com,"password","","Software developer");
+
+INSERT INTO planIT.users(`fullname`, `email`, `passw`, `picture`, `description`) VALUES (Chris Callan,chriscallan29@gmail.com,"password","","Software developer");
+
+INSERT INTO planIT.users(`fullname`, `email`, `passw`, `picture`, `description`) VALUES (Danny Do,dnnydo7@gmail.com,"password","","Graphic Designer");
+
+INSERT INTO planIT.users(`fullname`, `email`, `passw`, `picture`, `description`) VALUES (Zach Goad,zgoad@gmail.com,"password","","Software Developer");
+
+INSERT INTO planIT.users(`fullname`, `email`, `passw`, `picture`, `description`) VALUES (Tuoyo Okojie,tuoyookojie@gmail.com,"password","","Software Developer");
+
+INSERT INTO planIT.event(`eventName`, `eventType`, `eventDate`, `eventLoc`, `eventZip`, `eventDesc`) VALUES ("Bahamas Trip","vacation","122917",bahamas,"","A fun trip with friends!");
